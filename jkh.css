@@ -1,0 +1,223 @@
+/* NAV AND HEADER */
+
+body{
+    background-color: #EAEAEA;
+}
+
+/* Style for the header */
+header {
+    background: linear-gradient(to bottom, #F1F1F1, white);
+    /* Add any additional styling you need for the header */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    padding-top: 20px;
+}
+
+#header-image {
+    margin-right: 20px; /* Add some space between the image and the title */
+    /* Adjust the size as needed */
+    height: 300px; /* Example height, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 90%, transparent 95%); /* For WebKit browsers */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 90%, transparent 93%); /* Standard syntax */
+}
+
+.instagram_link: hover {
+    text-decoration: underline;
+}
+
+.header-title {
+    flex-grow: 1; /* Allow the title to take up the remaining space */
+    text-align: center; /* Center the text within the title area */
+    font-size: 46pt;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom:0;
+}
+
+.header-sub{
+    margin:0;
+    color: #333;
+    font-style: italic;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    flex-grow: 1;
+}
+
+#header-content h1 span {
+    display: inline-block;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the start */
+}
+
+#contact-info a {
+    display: flex;
+    align-items: center; /* Align icon and text */
+    margin: 10px 10px 5px 5px; /* Space between links */
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+    color: inherit; /* Optional: inherits text color */
+}
+
+#contact-info a:hover {
+    text-decoration-color: #333; /* Invert colors on hover */
+}
+
+.social-icon {
+    width: 20px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+
+/* Style for the navigation menu */
+nav {
+    background-color: #333; /* Change as needed */
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* MAIN AND SECTIONS */
+
+/* Style for each section */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: 1fr 1fr; /* Two rows of equal height */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Optional padding around the grid */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.section-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-container {
+    flex: 0 0 20%; /* Fixed width for the image container */
+    padding-right: 20px; /* Optional spacing between image and text */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: 200px; /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover;
+}
+
+.text-container {
+    flex: 1; /* Take the remaining space */
+}
+
+section {
+    /* Styles for each section */
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Optional background color */
+    transition: background-color 0.3s ease
+
+}
+
+section:hover{
+    cursor: pointer;   
+}
+
+section:hover .text-container h2{
+    text-decoration: underline;
+}
+
+.text-container h2{
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+}
+
+#sogur:hover{
+    background-color: #D6EAF8;
+}
+
+#sundid:hover{
+    background-color: #D4EFDF;
+}
+
+#fimmtan_ar:hover{
+    background-color: #F9F0DF;
+}
+
+#motmaelandi:hover{
+    background-color: #D6EAF8;
+}
+
+
+
+#sogur {
+    animation-delay: 0s;
+}
+
+#sundid {
+    animation-delay: 0.5s; /* Delay the start of the animation */
+}
+
+#fimmtan_ar {
+    animation-delay: 1s;
+}
+
+#motmaelandi {
+    animation-delay: 1.5s;
+}

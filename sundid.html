@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundið</title>
+    <link rel="stylesheet" href="sundid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</script>
+</head>
+<body>
+	    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1200, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        // ... other options
+    });
+</script>
+    <div class="movie-container">
+        <div class="movie-poster">
+            <img src="images/sundid_poster.jpg" alt="Movie Poster">
+        </div>
+        <div class="movie-info">
+            <h1>Sundið (2012)</h1>
+            <p>Sundið er mynd um æsilegar raunir tveggja Íslendinga sem keppa að því að verða fyrsti Íslendingurinn að synda yfir Ermarsundið - Mount -Everest sjósundsins. Ermarsundið reynir á andlegan styrk ekki síður en líkamlegan. </p>
+            <p>Í bland við hina æsispennandi glímu við erfiðasta sund í heimi, tvinnar myndin myndskeiðum af sögulegum sundum og viðburðum í lífi þjóðar þar sem hafið leikur stórt hlutverk, allt frá Helgusundi 898 til Guðlaugssunds 1984. </p>
+            <h2>Trailer</h2>
+            <!-- Embed YouTube trailer or similar here -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/PgG3bmLwsUA?si=NN9NnInxAxvzdNND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="item" data-aos="fade-up">
+            <img src="images/sund1.jpg" alt="Photo 1" class="photo">
+            <div class="text-field" data-aos="fade-up" data-aos-delay="300">Ingibjörg Ólafsdóttir syndir í Sundlauginni á Hofsósi.</div>
+        </div>
+        <div class="item" data-aos="fade-up">
+            <img src="images/sund2.jpg" alt="Photo 2" class="photo">
+            <div class="text-field" data-aos="fade-up" data-aos-delay="300">Text related to Photo 2</div>
+        </div>
+         <div class="item" data-aos="fade-up">
+            <img src="images/sund3.jpg" alt="Photo 2" class="photo">
+            <div class="text-field" data-aos="fade-up" data-aos-delay="300">Text related to Photo 2</div>
+        </div>
+        <!-- Repeat for other items -->
+    </div>
+</body>
+</html>
